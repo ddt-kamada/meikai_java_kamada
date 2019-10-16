@@ -7,11 +7,11 @@ import java.util.Scanner;
 public class E02_03 {
     public static void main(String[] args) {
         // 標準入力ストリームから取り出す入力値を変数stdInに格納する
-        Scanner stdIn = new Scanner(System.in);
+        Scanner standardInput = new Scanner(System.in);
         // 整数値の入力を促す
         System.out.print("整数値：");
         // X に入力値を読み込む
-        int x = stdIn.nextInt();
+        int x = standardInput.nextInt();
         // 出力する
         System.out.println(x + "と入力しましたね。");
     }

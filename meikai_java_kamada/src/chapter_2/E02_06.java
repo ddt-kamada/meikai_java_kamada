@@ -9,15 +9,15 @@ public class E02_06 {
         // 説明文を出力する。
         System.out.println("三角形の面積を求めます。");
         // 標準入力ストリームから取り出す入力値を変数stdInに格納する。
-        Scanner stdIn = new Scanner(System.in);
+        Scanner standardInput = new Scanner(System.in);
         // 底辺の値の入力を促す。
         System.out.print("底辺：");
-        // bottonに底辺の入力値を読み込む。
-        double bottom = stdIn.nextDouble();
+        // bottomに底辺の入力値を読み込む。
+        double bottom = standardInput.nextDouble();
         // 高さの値の入力を促す。
         System.out.print("高さ：");
         // heightに高さの入力値を読み込む。
-        double height = stdIn.nextDouble();
+        double height = standardInput.nextDouble();
         // xとyの合計値を出力する。
         System.out.println("面積は" + (bottom * height)/2 + "です。");
     }

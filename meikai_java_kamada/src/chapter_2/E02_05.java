@@ -7,15 +7,15 @@ import java.util.Scanner;
 public class E02_05 {
     public static void main(String[] args) {
         // 標準入力ストリームから取り出す入力値を変数stdInに格納する。
-        Scanner stdIn = new Scanner(System.in);
+        Scanner standardInput = new Scanner(System.in);
         // xの値の入力を促す。
         System.out.print("xの値：");
         // xに入力値を読み込む。
-        double x = stdIn.nextDouble();
+        double x = standardInput.nextDouble();
         // yの値の入力を促す。
         System.out.print("yの値：");
         // yに入力値を読み込む。
-        double y = stdIn.nextDouble();
+        double y = standardInput.nextDouble();
         // xとyの合計値を出力する。
         System.out.println("合計は" + (x + y) + "です。");
         // xとyの平均値を出力する。
