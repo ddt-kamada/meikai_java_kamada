@@ -13,18 +13,18 @@ public class E03_01 {
         Scanner standardInput = new Scanner(System.in);
         // 整数値の入力を促す。
         System.out.print("整数値：");
-        // キーボードから読み込んだ整数値を変数numberに格納する。
-        int number = standardInput.nextInt();
+        // キーボードから読み込んだ整数値を変数numberInputに格納する。
+        int numberInput = standardInput.nextInt();
         // 絶対値を格納する変数absoluteValueを宣言する。
         int absoluteValue;
-        if (number < 0) {
-            // numberが0未満の場合、numberの負の符号を外して絶対値とする。
-            absoluteValue = -number;
+        if (numberInput < 0) {
+            // 変数numberInputが0未満の場合、numberInputの負の符号を外して絶対値とする。
+            absoluteValue = -numberInput;
         } else {
-            // numberが0以上の場合、numberを絶対値とする。
-            absoluteValue = number;
+            // 変数numberInputが0以上の場合、numberInputを絶対値とする。
+            absoluteValue = numberInput;
         }
-        // 絶対値を出力する。
+        // 絶対値として変数absoluteValueを出力する。
         System.out.println("その絶対値は" + absoluteValue + "です。");
     }
 }
