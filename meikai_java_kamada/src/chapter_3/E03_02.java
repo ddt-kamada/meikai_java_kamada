@@ -23,11 +23,12 @@ public class E03_02 {
         System.out.print("整数B：");
         // キーボードから読み込んだ整数値を変数integerBに格納する。
         int integerB = standardInput.nextInt();
-        if (integerA % integerB == 0)
+        if (integerA % integerB == 0) {
             // integerAをintergerBで割ったあまりが0であればBはAの約数である。
             System.out.println("BはAの約数です。");
-        else
+        } else {
             // integerAをintergerBで割ったあまりが0でなければBはAの約数ではない。
             System.out.println("BはAの約数ではありません。");
+        }
     }
 }
