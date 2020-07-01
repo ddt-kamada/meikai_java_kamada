@@ -4,17 +4,17 @@ package chapter_2;
 
 public class E02_02 {
     public static void main(String[] args) {
-        int x;
-        int y;
-        int z;
+        int integerFirst;
+        int integerSecond;
+        int integerThird;
 
-        x = 51;
-        y = 24;
-        z = 68;
+        integerFirst = 51;
+        integerSecond = 24;
+        integerThird = 68;
 
-        // 合計値は143が表示される。
-        System.out.println("合計は" + (x + y + z) + "です。");
-        // 平均値は47（47.66666...の小数点以下が切り捨て）が表示される。
-        System.out.println("平均は" + (x + y + z) / 3 + "です。");
+        // 3つのint型変数の合計値を表示する。
+        System.out.println("合計は" + (integerFirst + integerSecond + integerThird) + "です。");
+        // 3つのint型変数の平均値を表示する（47.66666...の小数点以下が切り捨て）。
+        System.out.println("平均は" + (integerFirst + integerSecond + integerThird) / 3 + "です。");
     }
 }

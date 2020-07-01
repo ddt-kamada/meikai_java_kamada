@@ -10,11 +10,11 @@ public class E02_04 {
         Scanner standardInput = new Scanner(System.in);
         // 整数値の入力を促す
         System.out.print("整数値：");
-        // X に入力値を読み込む
-        int x = standardInput.nextInt();
-        // 10を加えた値を出力する
-        System.out.println("10を加えた値は" + (x + 10) + "です。");
-        // 10を減じた値を出力する。
-        System.out.println("10を減じた値は" + (x - 10) + "です。");
+        // 変数inputInteger に入力値を読み込む
+        int inputInteger = standardInput.nextInt();
+        // 変数inputInteger に10を加えた値を出力する
+        System.out.println("10を加えた値は" + (inputInteger + 10) + "です。");
+        // 変数inputInteger に10を減じた値を出力する。
+        System.out.println("10を減じた値は" + (inputInteger - 10) + "です。");
     }
 }

@@ -10,9 +10,9 @@ public class E02_03 {
         Scanner standardInput = new Scanner(System.in);
         // 整数値の入力を促す
         System.out.print("整数値：");
-        // X に入力値を読み込む
-        int x = standardInput.nextInt();
+        // 変数integerInput に入力値を読み込む
+        int integerInput = standardInput.nextInt();
         // 出力する
-        System.out.println(x + "と入力しましたね。");
+        System.out.println(integerInput + "と入力しましたね。");
     }
 }
