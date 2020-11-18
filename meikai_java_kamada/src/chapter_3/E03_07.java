@@ -19,13 +19,15 @@ public class E03_07 {
         int positiveInteger = standardInput.nextInt();
         // 正の整数値が入力された場合
         if (positiveInteger > 0) {
-            if (positiveInteger % 3 == 0) {
+            // 入力された正の整数値を3で割ったあまりを変数に格納する。
+            int divisionRemainder = positiveInteger % 3;
+            if (divisionRemainder == 0) {
                 // 入力された正の整数値が3で割り切れる場合
                 System.out.println("その値は3で割り切れます。");
-            } else if (positiveInteger % 3 == 1) {
+            } else if (divisionRemainder== 1) {
                 // 入力された正の整数値を3で割った余りが1の場合
                 System.out.println("その値を3で割った余りは1です。");
-            } else if (positiveInteger % 3 == 2) {
+            } else if (divisionRemainder == 2) {
                 // 入力された正の整数値を3で割った余りが2の場合
                 System.out.println("その値を3で割った余りは2です。");
             }
