@@ -11,18 +11,18 @@ public class E03_10 {
     public static void main(String[] args) {
         // 標準入力ストリームから取り出す入力値を変数standardInputに格納する。
         Scanner standardInput = new Scanner(System.in);
-        // 整数Aの入力を促す。
-        System.out.print("整数A：");
-        // 入力された整数を変数integerAに格納する。
-        int integerA = standardInput.nextInt();
-        // 整数Bの入力を促す。
-        System.out.print("整数B：");
-        // 入力された整数を変数integerBに格納する。
-        int integerB = standardInput.nextInt();
-        // 変数integerAと変数integerBを比べて大きい方から小さい方を引いた値を生成し、変数differenceに格納する。
-        int difference = integerA > integerB ? integerA - integerB : integerB - integerA;
+        // 整数の入力を促す。
+        System.out.print("整数を入力してください。：");
+        // 最初に入力された整数を変数integerFirstに格納する。
+        int integerFirst= standardInput.nextInt();
+        // 次の整数の入力を促す。
+        System.out.print("次の整数を入力してください。：");
+        // 2番目に入力された整数を変数integerSecondに格納する。
+        int integerSecond = standardInput.nextInt();
+        // 変数integerFirstと変数integerSecondを比べて大きい方から小さい方を引いた値を生成し、変数differenceFirstAndSecondに格納する。
+        int differenceFirstAndSecond = integerFirst > integerSecond ? integerFirst - integerSecond : integerSecond - integerFirst;
         // 変数differenceを出力する。
-        System.out.println("整数Aと整数Bの差は" + difference + "です。");
+        System.out.println("最初の整数と次の整数の差は" + differenceFirstAndSecond + "です。");
     }
 
 }
