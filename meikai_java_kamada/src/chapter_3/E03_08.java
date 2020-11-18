@@ -15,16 +15,19 @@ public class E03_08 {
         Scanner standardInput = new Scanner(System.in);
         // 点数の入力を促す。
         System.out.print("点数:");
-        // 入力された整数値を変数scoreに格納する。
-        int score = standardInput.nextInt();
+        // 入力された整数値を変数userInputScoreに格納する。
+        int userInputScore = standardInput.nextInt();
+        // 点数として正しくない数値が入力された場合、エラーとする。
+        if (userInputScore < 0) {
+            System.out.println("エラーが発生しました。正しい点数を入力してください。");
         // 点数が0以上59以下の場合
-        if (score >= 0 && score <= 59) {
+        } else if (userInputScore >= 0 && userInputScore <= 59) {
             System.out.println("不可");
         // 点数が60以上69以下の場合
-        } else if (score >= 60 && score <= 69) {
+        } else if (userInputScore >= 60 && userInputScore <= 69) {
             System.out.println("可");
         // 点数が70以上79以下の場合
-        } else if (score >= 70 && score <= 79) {
+        } else if (userInputScore >= 70 && userInputScore <= 79) {
             System.out.println("良");
         // 上記以外の点数（80点以上）
         } else {
