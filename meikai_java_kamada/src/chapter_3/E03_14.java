@@ -1,6 +1,10 @@
 /*
  * 二つの整数値を読み込んで、小さいほうの値と大きいほうの値を表示するプログラムを作成せよ。
- * ただし、二つの整数値が等しい場合は、右に示すように『二つの値は同じです。』と表示すること。
+ * ただし、二つの整数値が等しい場合は、下に示すように『二つの値は同じです。』と表示すること。
+ *
+ * 整数a: 12
+ * 整数b: 12
+ * 二つの値は同じです。
  */
 
 package chapter_3;
@@ -13,11 +17,11 @@ public class E03_14 {
         // 標準入力ストリームから取り出す入力値を変数standardInputに格納する。
         Scanner standardInput = new Scanner(System.in);
         // 最初の整数の入力を促す。
-        System.out.print("１番目の整数を入力してください。：");
+        System.out.print("整数a：");
         // 入力された整数値を変数integerFirstに格納する。
         int integerFirst = standardInput.nextInt();
         // 2番目の整数の入力を促す。
-        System.out.print("２番目の整数を入力してください。：");
+        System.out.print("整数b：");
         // 入力された整数値を変数integerSecondに格納する。
         int integerSecond = standardInput.nextInt();
 
