@@ -24,17 +24,17 @@ public class E03_11 {
         System.out.print("整数B：");
         // 次に入力された整数値を変数integerSecondに格納する。
         int integerSecond = standardInput.nextInt();
-        // 入力された二つの整数を比べる際の基準値を変数に格納する。
-        int referenceValue = 11;
-        // 出力される答の中で、入力された二つの整数を比べると変化する値を変数に格納する。
-        String answerMoreThan = "11以上";
-        String answerLessThan = "10以下";
+        // 入力された二つの整数を比べる際の基準値を定数に格納する。
+        final int REFERENCE_VALUE = 11;
+        // 出力される答の中で、入力された二つの整数を比べると変化する値を定数に格納する。
+        final String ANSWER_MORE_THAN = "11以上";
+        final String ANSWER_LESS_THAN = "10以下";
         /* 入力された二つの整数を比べて大きい方から小さい方を引いた差が、
         基準値以上であれば変数answerMoreThanを、基準値より小さければ変数answerLessThanを返して出力する。 */
         System.out.println("それらの差は"
                     + (integerFirst > integerSecond
-                            ? ((integerFirst - integerSecond) >= referenceValue ? answerMoreThan : answerLessThan)
-                            : ((integerSecond - integerFirst) >= referenceValue ? answerMoreThan : answerLessThan)
+                            ? ((integerFirst - integerSecond) >= REFERENCE_VALUE ? ANSWER_MORE_THAN : ANSWER_LESS_THAN)
+                            : ((integerSecond - integerFirst) >= REFERENCE_VALUE ? ANSWER_MORE_THAN : ANSWER_LESS_THAN)
                     ) + "です。");
     }
 
