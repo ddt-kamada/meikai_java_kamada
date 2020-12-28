@@ -13,11 +13,11 @@ public class E03_18 {
         Scanner standardInput = new Scanner(System.in);
         // 月の整数の入力を促す。
         System.out.print("月を整数で入力してください：");
-        // 入力された整数を変数randomMonthに格納する。
-        int randomMonth = standardInput.nextInt();
+        // 入力された整数を変数inputMonthに格納する。
+        int inputMonth = standardInput.nextInt();
 
-        // 変数randomMonthの値を評価し、ラベルに示された整数と一致していればプログラムを実行し、終了する。
-        switch (randomMonth) {
+        // 変数inputMonthの値を評価して対応する季節を文字列で出力し、終了する。
+        switch (inputMonth) {
             case 3 :
             case 4 :
             case 5 : System.out.print("春");
