@@ -11,15 +11,15 @@ public class E03_16 {
         // 標準入力ストリームから取り出す入力値を変数standardInputに格納する。
         Scanner standardInput = new Scanner(System.in);
         // 最初の整数値の入力を促す。
-        System.out.print("整数a：");
+        System.out.print("最初の整数：");
         // 入力された整数値を変数firstInputに格納する。
         int firstInput = standardInput.nextInt();
         // 2番目の整数値の入力を促す。
-        System.out.print("整数b：");
+        System.out.print("2番目の整数：");
         // 入力された整数値を変数secondInputに格納する。
         int secondInput = standardInput.nextInt();
         // 3番目の整数値の入力を促す。
-        System.out.print("整数c：");
+        System.out.print("3番目の整数：");
         // 入力された整数値を変数thirdInputに格納する。
         int thirdInput = standardInput.nextInt();
 
@@ -64,10 +64,10 @@ public class E03_16 {
         }
 
         // 結果を出力
-        System.out.println("a <= b && b <= c となるようにソートしました。");
-        System.out.println("変数aは" + minimumInteger + "です。");
-        System.out.println("変数bは" + mediumInteger + "です。");
-        System.out.println("変数cは" + maximumInteger + "です。");
+        System.out.println("入力された整数を小さい純に並べました。");
+        System.out.println(minimumInteger);
+        System.out.println(mediumInteger);
+        System.out.println(maximumInteger);
     }
 
 }
