@@ -64,7 +64,7 @@ public class E03_16 {
         }
 
         // 結果を出力
-        System.out.println("入力された整数を小さい純に上から並べました。");
+        System.out.println("入力された整数を小さい順に上から並べました。");
         System.out.println(minimumInteger);
         System.out.println(mediumInteger);
         System.out.println(maximumInteger);
