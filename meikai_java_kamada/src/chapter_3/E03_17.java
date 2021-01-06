@@ -14,9 +14,8 @@ public class E03_17 {
         // RandomクラスのnextIntメソッドを利用して0以上3未満の乱数を生成、randomInteger変数に格納する。
         int randomInteger = random.nextInt(3);
 
-        // 変数randomIntegerの値を評価し、ラベルに示された整数と一致していればプログラムを実行する。
+        // 生成された乱数の値を評価し、ラベルに示された整数と乱数が一致すれば対応するジャンケンの手を表示する。
         switch (randomInteger) {
-            // プログラム実行後はswitch文の実行を終了する。
             case 0 : System.out.print("グー"); break;
             case 1 : System.out.print("チョキ"); break;
             case 2 : System.out.print("パー"); break;
