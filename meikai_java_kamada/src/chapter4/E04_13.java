@@ -22,9 +22,9 @@ public class E04_13 {
             inputNumber = standardInput.nextInt();
         } while (inputNumber <= 0); // 入力された数値が0以下であれば、繰り返し正の整数値の入力を促す。
 
-        // インクリメントの回数が入力された正の整数以下であるあいだ、answerSumとその次の数の加算を繰り返す。
+        // 入力された正の整数回、繰り返し和を求める。
         int answerSum = 0;
-        for (int i=1; i <= inputNumber; i++) {
+        for (int i=1; i<=inputNumber; i++) {
             answerSum += i;
         }
 
