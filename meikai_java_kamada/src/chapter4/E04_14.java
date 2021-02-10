@@ -27,7 +27,7 @@ public class E04_14 {
 
         int answerSum = 0;
         // 入力された正の整数回和を求め、その際の足した数を出力する。
-        for (int i=1; i <= inputNumber; i++) {
+        for (int i=1; i<=inputNumber; i++) {
             answerSum += i;
             System.out.print(i);
             // 繰り返しの最後でなければ足した数を出力した次に正符号を出力する。
