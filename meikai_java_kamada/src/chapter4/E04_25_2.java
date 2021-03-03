@@ -46,12 +46,17 @@ public class E04_25_2 {
             addCount++;
         }
 
-        // 最終的な合計値と、加算を行った回数から平均値を計算する。
-        numberAverage = numberSum / addCount;
-        // 合計値を出力する。
-        System.out.println("合計は" + numberSum + "です。");
-        // 平均値を出力する。
-        System.out.println("平均は" + numberAverage + "です。");
+        if (addCount == 0) {
+            // 加算する値の1回目に1000より大きい数値が入力され、一度も加算処理が行われなかった場合はエラーメッセージを表示する。
+            System.out.println("加算が行われませんでした。");
+        } else {
+            // 最終的な合計値と、加算を行った回数から平均値を計算する。
+            numberAverage = numberSum / addCount;
+            // 合計値を出力する。
+            System.out.println("合計は" + numberSum + "です。");
+            // 平均値を出力する。
+            System.out.println("平均は" + numberAverage + "です。");
+        }
 
     }
 
