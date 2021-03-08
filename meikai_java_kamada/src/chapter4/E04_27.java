@@ -43,6 +43,7 @@ public class E04_27 {
 
             // 回答した回数を1増やす。
             answerCount++;
+            // 回答した回数が制限回数に達した場合、ゲームを終了する。
             if (answerCount == limitNumber) {
                 break;
             }
