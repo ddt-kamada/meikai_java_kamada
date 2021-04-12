@@ -19,14 +19,16 @@ public class E05_06 {
         System.out.println("  float         int   ");
         System.out.println("----------------------");
 
-        // 0.01ずつ増える実数を保持する変数と、1ずつ増える整数を保持する変数を定義し、
-        // 0.01ずつ増える実数が1.0以下のあいだ、同時に繰り返し処理を行う。
-        for (float increaseFloat=0.0F, increaseInt=0; increaseFloat<=1.0F; increaseFloat+=0.001F, increaseInt++) {
+        // 異なる型の変数をfor文で初期化するため、先に宣言する。
+        float increaseFloat;
+        int increaseInt;
+        // float型とint型の変数をそれぞれ初期化し、int型の変数が0から始めてインクリメントしながら1000になるまで繰り返す。
+        for (increaseFloat=0.0F, increaseInt=0; increaseInt<=1000; increaseFloat+=0.001F, increaseInt++) {
 
-            // 1ずつ増える整数を1000で割り、整数から浮動小数を求める。
+            // 1ずつ増える整数をfloat型にキャストし、1000で割った値を求める。
             float floatByInt = (float) increaseInt / 1000;
 
-            // 0.01ずつ増える実数と、1ずつ増える整数から求めた実数を表示する。
+            // 0.001ずつ増える実数と、1ずつ増える整数から求めた実数を表示する。
             System.out.printf("%8.7f    %8.7f", increaseFloat, floatByInt);
             System.out.println();
         }
