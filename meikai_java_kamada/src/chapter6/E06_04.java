@@ -16,10 +16,17 @@ public class E06_04 {
         Random randomGenerator = new Random();
         // 標準入力ストリームから入力値を取り出すための変数を宣言し、初期化する。
         Scanner standardInput = new Scanner(System.in);
-        // 要素数の入力を促す。
-        System.out.print("要素数：");
-        // 配列の要素数を格納する変数を宣言し、入力された要素数で初期化する。
-        int arrayLength = standardInput.nextInt();
+
+        // 配列の要素数を格納する変数を宣言する。
+        int arrayLength;
+        do {
+            // 要素数の入力を促す。
+            System.out.print("要素数：");
+            // 入力された要素数を代入する。
+            arrayLength = standardInput.nextInt();
+        } while (arrayLength < 0); // 入力された要素数が負の値の間、繰り返し要素数の入力を促す。
+
+
         // 入力された要素数の配列を生成し、配列変数intArray宣言してを初期化する。
         int[] intArray = new int[arrayLength];
 
