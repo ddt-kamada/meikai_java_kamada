@@ -38,14 +38,14 @@ public class E06_07 {
         // for文の終了後に評価するため、for文の外で探す値のインデックスを保持する変数を宣言する。
         int targetIndex;
         // 配列を後方から線形探索する。
-        for (targetIndex=ARRAY_LENGTH-1; targetIndex>0; targetIndex--) {
+        for (targetIndex=ARRAY_LENGTH-1; targetIndex>=0; targetIndex--) {
             if (intArray[targetIndex] == targetValue) {
                 // 探索が成功したら繰り返しを終了する。
                 break;
             }
         }
 
-        if (targetIndex > 0) {
+        if (targetIndex >= 0) {
             // 探索が成功していたらインデックスを表示する。
             System.out.println("それはa[" + targetIndex + "]にあります。");
         } else {
